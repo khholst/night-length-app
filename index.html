@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Night Length App</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h1>Enter the coordinates and date to find the length of night</h1>
+                </div>
+            </div>
+
+            <form class="row g-3 needs-validation">
+                <div class="row">
+                    <div class="col">
+                        <label for="latitude" class="form-label">Latitude</label>
+                        <input type="text" id="latitude" class="form-control" placeholder="Latitude">
+                        <div id="invalid-latitude" class="text-danger">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="latitude" class="form-label">Longitude</label>
+                        <input type="text" id="longitude" class="form-control" placeholder="Longitude">
+                        <div id="invalid-longitude" class="text-danger">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="latitude" class="form-label">Date</label>
+                        <input type="date" id="date" class="form-control" placeholder="Date">
+                        <div id="invalid-date" class="text-danger">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="column">
+                    <h1>Or click on the map to choose coordinates</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col justify-content-center">
+                    <div id="map" style="width: 600px; height: 400px;"></div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="submit-button">
+                <div class="col">
+                    <button class="btn btn-primary">Calculate Night Length</button>
+                </div>
+            </div>
+
+
+
+            <div class="row text-center results">
+            </div>
+                <div class="row text-center results">
+                    <p id="night"></p>
+                </div>
+
+                <div class="row text-center results">
+                    <p id="sunrise"></p>
+                </div>
+                <div class="row text-center results">
+                    <p id="sunset"></p>
+                </div>
+            </div>
+
+            <div class="row text-center results">
+                <div class="col">
+                    <p></p>
+                </div>
+                <div class="col">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="map.js"></script>
+    <script src="sunrise-formula.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
