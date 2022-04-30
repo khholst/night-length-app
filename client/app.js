@@ -1,3 +1,7 @@
+//------------------------------//
+//------Karl Hendrik Holst------//
+//--CGI suvepraktika proovitöö--//     
+//------------------------------//
 
 let map = L.map("map").setView([0, 0], 1);
 
@@ -5,8 +9,6 @@ let tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}
     maxZoom: 8,
     minZoom: 1,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    //tileSize: 512,
-    //zoomOffset: -1,
 }).addTo(map);
 
 let terminator = L.terminator().addTo(map); //Add night and day seperator to map

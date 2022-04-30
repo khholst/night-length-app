@@ -1,10 +1,13 @@
+//------------------------------//
+//------Karl Hendrik Holst------//
+//--CGI suvepraktika proovitöö--//     
+//------------------------------//
+
 const express = require("express");
-const dotenv = require("dotenv");
 const { find } = require("geo-tz");
 const moment = require("moment-timezone");
 
 const app = express();
-dotenv.config();
 
 app.listen(process.env.PORT || 3000);
 app.use(express.static("client"));

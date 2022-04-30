@@ -1,3 +1,7 @@
+//------------------------------//
+//------Karl Hendrik Holst------//
+//--CGI suvepraktika proovitöö--//     
+//------------------------------//
 
 const SUNANGLES = {
     ZENITH          : 90.833, //Source: https://gml.noaa.gov/grad/solcalc/solareqns.PDF
