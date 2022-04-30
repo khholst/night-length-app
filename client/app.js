@@ -5,8 +5,8 @@ let tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}
     maxZoom: 8,
     minZoom: 1,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    tileSize: 512,
-    zoomOffset: -1,
+    //tileSize: 512,
+    //zoomOffset: -1,
 }).addTo(map);
 
 let terminator = L.terminator().addTo(map); //Add night and day seperator to map
@@ -118,6 +118,7 @@ const dateInput = document.getElementById("date");
 dateInput.addEventListener("input", () =>  {
     const dateIsValid = validateDate(dateInput);
     if (dateIsValid) redrawTerminator(); //Check if date is valid before trying to redraw the terminator
+    deleteResults();
 });
 dateInput.value = formatDefaultDate(); //Add todays date as default
 
