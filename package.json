@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khholst/night-length-app.git"
   },
-  "author": "",
+  "author": "Karl H. Holst",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/khholst/night-length-app/issues"
+  },
+  "engines": {
+    "node": "16.14.2"
   },
   "homepage": "https://github.com/khholst/night-length-app#readme",
   "dependencies": {
