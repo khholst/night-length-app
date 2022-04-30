@@ -1,0 +1,47 @@
+
+
+main {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.leaflet-container {
+    height:100%;
+    position: relative;
+}
+
+.leaflet-interactive {
+    cursor: default;
+}
+
+#map {
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+    cursor: default;
+}
+
+#submit-button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#time-slider {
+    margin: auto;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.results {
+    margin-top: 10px;
+}
